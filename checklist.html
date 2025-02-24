@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>決算申告のみ_見積りチェックリスト</title>
+  <style>
+    /* ベースリセットと基本設定 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "游ゴシック", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: #f8f9fa;
+      color: #2d3436;
+      padding: 40px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* タイトル */
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .title h1 {
+      font-size: 1.8em;
+      color: #0984e3;
+      margin-bottom: 10px;
+    }
+    .title p {
+      font-size: 0.95em;
+      color: #636e72;
+    }
+
+    /* チェックリスト全体 */
+    .checklist {
+      margin-top: 20px;
+    }
+
+    /* 各条件 */
+    .condition {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #0984e3;
+      background: #fdfdfd;
+      border-radius: 8px;
+    }
+    .condition-title {
+      font-size: 1.2em;
+      color: #0984e3;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .condition-title::before {
+      content: "□";
+      color: #0984e3;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .condition-body {
+      margin-left: 10px;
+    }
+    .condition-body ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .condition-body li {
+      position: relative;
+      margin-bottom: 8px;
+      padding-left: 24px;
+    }
+    .condition-body li::before {
+      content: "□";
+      position: absolute;
+      left: 0;
+      color: #0984e3;
+    }
+
+    /* フッター的な注意書きや補足 */
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #636e72;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- タイトル部分 -->
+    <div class="title">
+      <h1>【決算申告のみ_見積りチェックリスト】</h1>
+      <p>必要項目を事前にご確認ください</p>
+    </div>
+
+    <!-- チェックリスト本体 -->
+    <div class="checklist">
+      <!-- 条件➀ -->
+      <div class="condition">
+        <div class="condition-title">条件➀：会計ソフトの指定</div>
+        <div class="condition-body">
+          <ul>
+            <li>使用する会計ソフトは freee または マネフォワードであること</li>
+            <li>それ以外の場合は、プラス2万円の料金が加算されるか、対応不可の可能性がある。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➁ -->
+      <div class="condition">
+        <div class="condition-title">条件➁：各種届出</div>
+        <div class="condition-body">
+          <ul>
+            <li>電子申告による各種届出の料金が 7,500円 であること</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➂ -->
+      <div class="condition">
+        <div class="condition-title">条件➂：相談対応</div>
+        <div class="condition-body">
+          <ul>
+            <li>月次での相談が不可であること</li>
+            <li>電話・チャットでの相談も不可であること</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➃ -->
+      <div class="condition">
+        <div class="condition-title">条件➃：修正仕訳対応</div>
+        <div class="condition-body">
+          <ul>
+            <li>修正仕訳が発生した場合、1仕訳につき100円 の追加料金が発生する。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件⑤ -->
+      <div class="condition">
+        <div class="condition-title">条件⑤：帳簿の状況</div>
+        <div class="condition-body">
+          <ul>
+            <li>帳簿が締まっている。</li>
+            <li>100仕訳を超える修正仕訳の場合には、記帳代行と決算申告込みで 160,000円。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➆ -->
+      <div class="condition">
+        <div class="condition-title">条件➆：設立一期目料金</div>
+        <div class="condition-body">
+          <ul>
+            <li>49,900円は設立初年度の料金設定である。</li>
+            <li>2期目以降は 79,900円。（創業5期以内）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➇ -->
+      <div class="condition">
+        <div class="condition-title">条件➇：消費税申告</div>
+        <div class="condition-body">
+          <ul>
+            <li>消費税申告がある場合、追加で 50,000円 の料金が発生する</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件➈ -->
+      <div class="condition">
+        <div class="condition-title">条件➈：補助金申請</div>
+        <div class="condition-body">
+          <ul>
+            <li>補助金申請を行う場合、着手金として別途 50,000円 が必要</li>
+            <li>成功報酬として 30% が発生する</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 条件⑩ -->
+      <div class="condition">
+        <div class="condition-title">条件⑩：売上規模1000万円以内</div>
+        <div class="condition-body">
+          <ul>
+            <li>本チェックリストは売上規模1000万円以内の事業者様を想定しています。（※表示は税抜価格）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- フッター -->
+    <div class="footer">
+      ※ 条件はあくまでも目安です。個別の状況に応じて変更・追加が生じる場合があります。
+    </div>
+  </div>
+</body>
+</html>
